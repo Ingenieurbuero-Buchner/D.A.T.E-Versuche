@@ -1,0 +1,95 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+   <head>
+      <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="inputs.css" media="all" >
+   </head>
+   <body>
+      <form id="PersonalData" action="select.htm">
+         <fieldset id="PersonalInfo">
+            <legend>personal info</legend>
+            <fieldset class="radio prefix">
+               <legend>title</legend>
+               <label for="Prefix">
+                  <input id="Prefix" name="Prefix" type="radio" value="Mrs" />
+                  Mrs. </label>
+               <label for="Prefix">
+                  <input id="Prefix" name="Prefix" type="radio" value="Mr"/>
+                  Mr. </label>
+            </fieldset><!-- END .radio .prefix -->
+            <label for="FamilyStatus">family status
+               <select id="SelFamilyStatus" name="SelFamilyStatus">
+                  <option value></option>
+                  <option value="single">single</option>
+                  <option value="married">married</option>
+               </select></label>
+            <label for="Children">children
+               <input id="Children" name="Children" type="text"
+                      value="No." /></label>
+
+            <label for="Nationality">nationality
+               <input id="Nationality" name="Nationality" type="text"
+                      value="nationality" /></label>
+         </fieldset><!-- END #PersonalInfo-->
+         <fieldset id="ContactData">
+            <legend>contact data</legend>
+            <label for="Street">street
+               <input id="Street" name="Street" type="text"
+                      value="street" /></label>
+            <label for="StreetSupplement">street supplement
+               <input id="StreetSupplement" name="StreetSupplement" type="text"
+                      value="street supplement" /></label>
+            <label for="PostCode">postcode
+               <input id="PostCode" name="PostCode" type="text"
+                      value="postcode" /></label>
+            <label for="Telephone1">telephone 1
+               <input id="Telephone1" name="Telephone1" type="text"
+                      value="telephone 1" /></label>
+            <label for="Mobile">mobile
+               <input id="Mobile" name="Mobile" type="text"
+                      value="mobile" /></label>
+            <label for="Telephone2">telephone 2
+               <input id="Telephone2" name="Telephone2" type="text"
+                      value="telephone 2" /></label>
+            <label for="EmergencyNumber1">emergency number 1
+               <input id="EmergencyNumber1" name="EmergencyNumber1" type="text"
+                      value="emergency number 1" /></label>
+            <label for="EmergencyName1">emergency name 1
+               <input id="EmergencyName1" name="EmergencyName1" type="text"
+                      value="emergency name 1" /></label>
+            <label for="EmergencyNumber2">emergency number 2
+               <input id="EmergencyNumber2" name="EmergencyNumber2" type="text"
+                      value="emergency number 2" /></label>
+            <label for="EmergencyName2">emergency name 2
+               <input id="EmergencyName2" name="EmergencyName2" type="text"
+                      value="emergency name 2" /></label>
+         </fieldset><!-- END #ContactData -->
+         <fieldset id="WorkData">
+            <legend>work data</legend>
+            <label for="Disabled">disabled
+               <input id="Disabled" name="Disabled" type="text"
+                      value="disabled" />%</label>
+            <label for="ValidUntil">valid until
+               <input id="ValidUntil" name="ValidUntil" type="text"
+                      value="valid until" />%
+            </label>
+            <input id="CbValidUntil" name="CbValidUntil" type="checkbox" />unlimited
+            <label for="ResidencePermit">residence permit valid until
+               <input id="ResidencePermit" name="ResidencePermit" type="text"
+                      value="residence permit valid until" />%            
+            </label>
+            <input id="CbResidencePermit" name="CbResidencePermit" type="checkbox" />unlimited
+         </fieldset><!-- END WorkData -->
+         <label for="EmployeeGeneral0Comment">Comment</label>
+         <textarea name="data[EmployeeGeneral][0][comment]" cols="30" rows="6" id="EmployeeGeneral0Comment"></textarea>
+         <fieldset>
+            <div class="input textarea"><label for="EmployeeGeneralVita">Lebenslauf</label><textarea name="data[Employee][general_vita]" cols="30" rows="6" id="EmployeeGeneralVita"></textarea></div><div class="input textarea"><label for="EmployeeGeneralEducation">Ausbildung</label><textarea name="data[Employee][general_education]" cols="30" rows="6" id="EmployeeGeneralEducation"></textarea></div><div class="input textarea"><label for="EmployeeGeneralJobHistory">Berufserfahrung</label><textarea name="data[Employee][general_job_history]" cols="30" rows="6" id="EmployeeGeneralJobHistory"></textarea></div><div class="input textarea"><label for="EmployeeGeneralSpecialKnowledge">Besondere Kenntnisse</label><textarea name="data[Employee][general_special_knowledge]" cols="30" rows="6" id="EmployeeGeneralSpecialKnowledge"></textarea></div><div class="input textarea"><label for="EmployeeGeneralComment">Kommentar</label><textarea name="data[Employee][general_comment]" cols="30" rows="6" id="EmployeeGeneralComment"></textarea></div>	</fieldset>
+      </from><!-- END #PersonalData -->
+</body>
+</html>
