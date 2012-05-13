@@ -7,11 +7,12 @@
 */
 
 * { padding: 0; margin: 0; border-collapse: collapse; }
+
 root { 
    display: block;
 }
 body{
-background-color: #757575;
+   background-color: #FFFFFF;
 }
 
 #PersonalData fieldset, #PersonalData input #PersonalData select{
@@ -20,10 +21,14 @@ background-color: #757575;
 #PersonalData fieldset, #PersonalData label, #PersonalData input, #PersonalData select{
    display: block;
 }
+
 #PersonalData fieldset{
    width: 24em;
-   margin: 2em 0em 2em 2em;
+   margin: 0em 0em 0em 2em;
    padding: 1em;
+   background-color: #ffffff;
+   border: none;
+   border-top: 1px solid #999999;   
 }
 #PersonalData fieldset legend{
    /*   font-family: Georgia, serif;*/
@@ -33,9 +38,10 @@ background-color: #757575;
    padding: 0em 0.6em 0em 0.6em;
 }
 #PersonalData fieldset fieldset{
-   width: auto;
-   margin: 0em 1em 0em 1em;
+   width: 16em;
+   margin: 0em 0em 1em 0em;
    padding-bottom: 0em;
+   background-color: #ffffff;
 }
 #PersonalData fieldset fieldset legend{
    font: inherit;
@@ -74,23 +80,10 @@ background-color: #757575;
    margin: 0em;
 }
 
-#PersonalData fieldset{
-   width: 24em;
-   margin: 2em 0em 2em 2em;
-   padding: 1em;
-   background-color: #ffffff;
-   border: none;
-   border-top: 1px solid #999999;   
-}
-#PersonalData fieldset fieldset{
-   width: auto;
-   margin: 0em 0em 1em 0em;
-   padding-bottom: 0em;
-   background-color: #ffffff;
-}
+
+
 #PersonalData select{
    width: 21.3em;
-   padding: 0.1em 0.6em 0.2em 0.6em;
-   -w 
-  color: #222;
+   padding: 0.2em 0.1em 0.2em 0.1em;
+   color: #222222;
 }

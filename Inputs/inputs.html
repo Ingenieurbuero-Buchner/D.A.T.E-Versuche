@@ -2,7 +2,8 @@
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
    <head>
@@ -86,8 +87,11 @@ and open the template in the editor.
             </label>
             <input id="CbResidencePermit" name="CbResidencePermit" type="checkbox" />unlimited
          </fieldset><!-- END WorkData -->
-         <label for="EmployeeGeneral0Comment">Comment</label>
-         <textarea name="data[EmployeeGeneral][0][comment]" cols="30" rows="6" id="EmployeeGeneral0Comment"></textarea>
+         <fieldset id="Others">
+            <legend>others</legend>
+            <label for="EmployeeGeneral0Comment">Comment</label>
+            <textarea name="data[EmployeeGeneral][0][comment]" cols="30" rows="6" id="EmployeeGeneral0Comment"></textarea>
+         </fieldset>
          <fieldset>
             <div class="input textarea"><label for="EmployeeGeneralVita">Lebenslauf</label><textarea name="data[Employee][general_vita]" cols="30" rows="6" id="EmployeeGeneralVita"></textarea></div><div class="input textarea"><label for="EmployeeGeneralEducation">Ausbildung</label><textarea name="data[Employee][general_education]" cols="30" rows="6" id="EmployeeGeneralEducation"></textarea></div><div class="input textarea"><label for="EmployeeGeneralJobHistory">Berufserfahrung</label><textarea name="data[Employee][general_job_history]" cols="30" rows="6" id="EmployeeGeneralJobHistory"></textarea></div><div class="input textarea"><label for="EmployeeGeneralSpecialKnowledge">Besondere Kenntnisse</label><textarea name="data[Employee][general_special_knowledge]" cols="30" rows="6" id="EmployeeGeneralSpecialKnowledge"></textarea></div><div class="input textarea"><label for="EmployeeGeneralComment">Kommentar</label><textarea name="data[Employee][general_comment]" cols="30" rows="6" id="EmployeeGeneralComment"></textarea></div>	</fieldset>
       </from><!-- END #PersonalData -->
