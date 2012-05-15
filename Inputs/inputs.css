@@ -9,81 +9,47 @@
 * { padding: 0; margin: 0; border-collapse: collapse; }
 
 root { 
-   display: block;
+    display: block;
 }
 body{
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
+#PersonalData em {
+    color:red;
+}
 #PersonalData fieldset, #PersonalData input #PersonalData select{
-   border: 1px solid #CCCCCC;
+    border: 1px solid #CCCCCC;
 }
-#PersonalData fieldset, #PersonalData label, #PersonalData input, #PersonalData select{
-   display: block;
+#PersonalData fieldset label, #PersonalData fieldset input{
+/*    text-transform: lowercase;*/
+    margin-bottom: 1em;
 }
-
 #PersonalData fieldset{
-   width: 24em;
-   margin: 0em 0em 0em 2em;
-   padding: 1em;
-   background-color: #ffffff;
-   border: none;
-   border-top: 1px solid #999999;   
+    width: 55em;
 }
-#PersonalData fieldset legend{
-   /*   font-family: Georgia, serif;*/
-   /*   font-style: italic;*/
-   font-size: 0.8em;
-   color: #999999;
-   padding: 0em 0.6em 0em 0.6em;
+#PersonalData fieldset label{
+    float: left;
+    width: 10em;
+    font-weight: bold;
 }
-#PersonalData fieldset fieldset{
-   width: 16em;
-   margin: 0em 0em 1em 0em;
-   padding-bottom: 0em;
-   background-color: #ffffff;
+#PersonalData fieldset input{
+    color: green;
+    width: 20em;
+    float: left;
 }
-#PersonalData fieldset fieldset legend{
-   font: inherit;
-   color: inherit;
-   font-weight: bold;
+#PersonalData fieldset #ENo{
+    text-align: right;
+    width: 20em;
+    padding-right: 1em
 }
-#PersonalData label{
-   margin-bottom: 1em;
-   text-indent: 0.6em;
-   font-size: 0.8em;
-   color: #999999;   
+#PersonalData fieldset #ENoInput{
+    text-align: right;
+    width: 5em;
+    font-weight: normal;
 }
-#PersonalData fieldset.radio label{
-   font-weight: normal;
-   color: #222222;
-}
-#PersonalData fieldset.prefix legend{
-   font-size: 0.8em;
-   font-weight: normal;
-   color: #999999;
-   padding: 0em 0.6em 0em 0.6em;
-}
-#PersonalData fieldset.prefix label{
-   float: left;
-   width: 8em;
-}
-#PersonalData input{
-   width: 20em;
-   padding: 0.2em 0.6em 0.3em 0.6em;
-   color: #222222;
-}
-#PersonalData fieldset.radio input{
-   clear: both;
-   float: left;
-   width: auto;
-   margin: 0em;
-}
-
-
-
-#PersonalData select{
-   width: 21.3em;
-   padding: 0.2em 0.1em 0.2em 0.1em;
-   color: #222222;
+.inlineLabel{
+    font-size: 0.8em;
+    display: block;
+    color: #999999;
 }
