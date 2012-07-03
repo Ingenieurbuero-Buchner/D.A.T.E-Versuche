@@ -1,0 +1,85 @@
+/* 
+    Document   : toolTip
+    Created on : 20.06.2012, 20:10:35
+    Author     : Alex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+   display: block;
+}
+html, body
+{
+   margin:0;
+   padding:0;
+   height:100%;
+   overflow:hidden;
+}
+
+.tooltip {
+   border-bottom: 1px dotted #000000;
+   color: #000000;
+   outline: none;
+   cursor: help; 
+   text-decoration: none;
+   position: relative;
+}
+.tooltip span {
+   margin-left: -999em; /* dadurch wird der ToolTip aus dem sichtbaren Bereich geschoben */
+   position: absolute;
+}
+.tooltip:hover span {
+   font-family: Calibri, Tahoma, Geneva, sans-serif;
+   position: fixed; 
+   left: 0px;
+   right: 0px;
+   z-index: 99;
+   margin-left: 0; 
+   width: 99%;
+   height: 80px;
+   bottom: 0px;
+   text-align: center;
+}
+.tooltip:hover img {
+   border: 0;
+   margin: -10px 0 0 -100px;
+   float: left; 
+   position: absolute;
+}
+.tooltip:hover em { /* die Überschrift in den ToolTips */
+   font-family: Candara, Tahoma, Geneva, sans-serif;
+   font-size: 1.2em; 
+   font-weight: bold;
+   display: block; 
+   padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.classic { background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334;}
+.help { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
+
+* html, * html body {
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+}
+
+* html p {
+    padding:0;
+    height:95%;
+    overflow:auto;
+}
+
+* html .tooltip span:hover{
+    background:#efefef;
+    height:5%;
+    text-align:center;
+    padding-top:1%;
+}
