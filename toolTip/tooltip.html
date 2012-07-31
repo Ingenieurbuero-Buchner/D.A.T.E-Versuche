@@ -1,0 +1,47 @@
+<!--
+    Document   : newhtml
+    Created on : 31.07.2012, 08:22:16
+    Author     : Alexander Buchner
+    Description:
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/tooltip.css" />
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    </head>
+    <body>
+        <div class="tooltip">
+            Hier steht die Überschrift für 11111111111<br>
+            <p>Text 1111111111111</p>
+        </div>
+        <div class="tooltip">
+            Hier steht die Überschrift für 22222222222<br>
+            <p>Text 22222222222222</p>
+        </div>
+        <div class="tooltip">
+            Hier steht die Überschrift für 33333333333<br>
+            <p>Text 33333333333333</p>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.tooltip').mouseenter(function () {
+                    var obj = $(this);
+                    obj.addClass('hasFocus');
+                    setTimeout(function(){
+                        if (obj.hasClass('hasFocus')) {
+                            obj.children('p').slideToggle('slow');
+                            //$this.('p').slideToggle('slow');  //this operater geht hier irgendwie nicht so wie ich möchte
+                        }
+                    }, 500 );
+                });
+                $('.tooltip').mouseleave(function () {
+                    $(this).removeClass('hasFocus');
+                    $('p').slideUp('medium');
+                });
+            });
+        </script>
+    </body>
+</html>

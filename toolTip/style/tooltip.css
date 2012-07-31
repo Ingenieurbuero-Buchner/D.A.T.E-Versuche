@@ -1,0 +1,46 @@
+/* 
+    Document   : tooltip
+    Created on : 31.07.2012, 08:36:35
+    Author     : Alexander Buchner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+/*Tooltips*/
+.tooltip {
+    /*   border-bottom: 1px dotted #000000;*/
+    color: #000000;
+    outline: none;
+    cursor: help; 
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltip p {
+    display: none;  /*dadurch wird der ToolTip aus dem sichtbaren Bereich geschoben */
+    font-family: Calibri, Tahoma, Geneva, sans-serif;
+    position: fixed; 
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    margin-left: 0; 
+    width: 99%;
+    height: 40px;
+    bottom: 0px;
+    text-align: center;
+    background: #FFFFAA; 
+    border: 0px solid #FFAD33; 
+    padding: 0.5em 0.8em 0.8em 2em;
+}
+
+.tooltip p em {  /*die Überschrift in den ToolTips */
+    font-family: Candara, Tahoma, Geneva, sans-serif;
+    font-size: 1.2em; 
+    font-weight: bold;
+    display: block; 
+    padding: 0.2em 0 0.6em 0;
+}
